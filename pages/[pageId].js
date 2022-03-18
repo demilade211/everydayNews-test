@@ -8,11 +8,16 @@ import {
     detail,
     detailSpan,
     pa,
-    heading
+    heading,
+    commentsContainer,
+    addCommentContainer,
+    formCon,
+    input
 
 } from '../styles/singlePage.module.css'
 import axios from 'axios'
 import {useState,useEffect} from 'react'
+import Comment from "../components/Comment"
 
 const singleNews = ({onePost}) => {
     const [post, setPost] = useState(onePost)
@@ -43,6 +48,15 @@ const singleNews = ({onePost}) => {
         <section className={firstSection}>
             <h2 className={heading}>Reader Comments</h2>
             <hr/>
+            <div className={commentsContainer}>
+                <Comment/>
+                <div className={addCommentContainer}>
+                    <h3>Join the discussion</h3>
+                        <form className={formCon}>
+                            <input className={input} type="text" name="comment" />
+                        </form>                                     
+                </div>
+            </div>
         </section>
     </>
   )

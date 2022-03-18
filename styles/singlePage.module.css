@@ -30,7 +30,6 @@
        align-items: center;
    }
    .pageInfo{
-       border: 1px solid black;
        display: flex;
        height: 40px;
        width: 100%;
@@ -49,6 +48,23 @@
     color: #00B0F0;
     font-size: 1.9rem;
    }
+   .commentsContainer{
+       width: 100%;
+       min-height: 200px;
+       background: rgba(245, 245, 245, 0.6);
+   }
+   .formCon{
+       border: 1px solid black;
+       width: 80%;
+       height: 400px;
+       display: grid;
+       grid-template-columns: 100% 50% 50% 50%;
+   }
+    .input{
+        border: 1px solid black;
+        width: 100%;
+        padding: 12px;
+    }
    @media screen and (max-width: 1000px) {
     
   }
